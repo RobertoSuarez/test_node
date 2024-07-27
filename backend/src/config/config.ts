@@ -5,6 +5,7 @@ dotenv.config();
 const config = {
     end: process.env.NODE_ENV || 'development',
     port: process.env.PORT || 3000,
+    jwtSecret: process.env.JWT_SECRET || 'secret',
     dbHost: process.env.DB_HOST || 'localhost',
     dbUser: process.env.DB_USER || 'root',
     dbPassword: process.env.DB_PASSWORD || 'root',

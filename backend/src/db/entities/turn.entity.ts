@@ -1,10 +1,11 @@
 import { Collection, Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { Cash } from "./cash.entity";
 import { Attention } from "./attention.entity";
+import { BaseTable } from "../common/basetable.entity";
 
 
 @Entity()
-export class Turn {
+export class Turn extends BaseTable {
 
     @PrimaryGeneratedColumn()
     turnId: number;

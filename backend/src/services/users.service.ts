@@ -78,6 +78,8 @@ export class UserService {
         }
     }
 
+    
+
     async findAll() {
         try {
             const users = await this.userRepository.find({

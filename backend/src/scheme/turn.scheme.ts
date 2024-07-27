@@ -15,4 +15,15 @@ const createTurnScheme = Joi.object({
     cashId: cashId.required(),
 });
 
-export { createTurnScheme };
+const updateTurnScheme = Joi.object({
+    description: description.required(),
+    date: date.required(),
+    userGestorId: userGestorId.required(),
+    cashId: cashId.required()
+});
+
+const turnIdScheme = Joi.object({
+    turnId: id.required(),
+})
+
+export { createTurnScheme, updateTurnScheme, turnIdScheme };

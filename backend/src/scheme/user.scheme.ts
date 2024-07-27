@@ -41,5 +41,10 @@ const userIdScheme = Joi.object({
     userId: id.required()
 })
 
+const loginScheme = Joi.object({
+    username: username.required(),
+    password: password.required()
+})
 
-export { createUserScheme, userIdScheme, updateUserScheme };
+
+export { createUserScheme, userIdScheme, updateUserScheme, loginScheme };
